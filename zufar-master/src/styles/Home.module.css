@@ -1,0 +1,176 @@
+.main{
+  justify-content: flex-end;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background-image: radial-gradient(
+    circle farthest-side at var(--x) var(--y),
+    rgba(29,31,38, .6) 0%,
+    transparent 120%
+  );
+}
+
+.profileName{
+  width: 40vw;
+  height: 100vh;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  left: 0;
+}
+.userWrapper{
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.userWrapper h1{
+  color: #FFF;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 36px; /* 112.5% */
+}
+
+.userWrapper h6{
+  display: flex;
+  padding: 0px 4px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: #09B1BC;
+
+  color: #FFF;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 36px; /* 225% */
+}
+
+.contactItem{
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.icContact:hover path{
+  fill-opacity: 1;
+}
+
+
+.contentWrapper{
+  width: 60vw;
+  height: 100vh;
+  display: flex;
+  padding: 100px;
+  flex-direction: column;
+  grid-gap: 48px;
+  overflow: auto;
+}
+
+.contentSection{
+  display: flex;
+  grid-gap: 6px;
+  flex-direction: column;
+}
+
+.contentSection h2{
+  color: #FFF;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 24px */
+  letter-spacing: 2%;
+}
+
+.contentSection p{
+  color: rgba(255, 255, 255, 0.80);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 150%; /* 24px */
+  margin-bottom: 16px;
+}
+
+.button{
+  color: #09B1BC;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 24px */
+  letter-spacing: 4%;
+}
+
+.listItem{
+  display: flex;
+  grid-gap: 16px;
+  padding: 24px 0 24px 0;
+}
+
+.year{
+  width: 20%;
+}
+
+.jobDesc{
+  width: 100%;
+}
+
+.company{
+  text-decoration: none;
+  color: white;
+}
+
+
+.company:hover{
+  color: #09B1BC;
+}
+
+.skillWrapper{
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.skillSet{
+  background: rgba(255, 255, 255, 0.2);
+  color: rgb(9, 177, 188);
+  font-weight: 400;
+  padding: 4px 6px;
+}
+
+.button a{
+  text-decoration: none;
+  color: #09B1BC;
+}
+
+@media only screen and (max-width: 1365px) {
+  .main{
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .profileName{
+    width: 100vw;
+    position: relative;
+    padding: 48px 48px 24px 48px;
+    height: fit-content;
+    justify-content: flex-start;
+  }
+
+  .contentWrapper{
+    width: 100vw;
+    padding: 24px 48px 48px 48px;
+  }
+}
